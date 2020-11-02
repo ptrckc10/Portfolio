@@ -1,0 +1,621 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  position: relative;
+  background: transparent;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  background: url("../img/bg.jpg") top no-repeat;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: -1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/* 
+*========================
+*         NavBar        *
+*========================
+*/
+
+.navbar {
+  transition: ease-in-out 0.3s;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.87) !important;
+  z-index: 9998;
+}
+
+.navbar * {
+  transition: ease-in-out 0.3s;
+}
+
+.navbar h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  top: 0;
+  border: 0;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  cursor: pointer;
+  color: #fff !important;
+}
+
+/* *-- Nav Items --* */
+.navbar .navbar-nav {
+  list-style: none;
+}
+
+.navbar .navbar-nav .nav-item {
+  margin-left: 30px;
+}
+
+.navbar .navbar-nav .nav-item a {
+  display: block;
+  position: relative;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.navbar .navbar-nav .nav-item a:before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  border-bottom: 2px solid darkorange;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out 0s;
+  width: 0;
+}
+
+.navbar .navbar-nav .nav-item a:hover,
+.navbar .navbar-nav .active > a,
+.navbar .navbar-nav .nav-item:hover > .navbar .navbar-nav .nav-item a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.navbar .navbar-nav .nav-item a:hover:before,
+.navbar .navbar-nav .active > a:before,
+.navbar .navbar-nav .nav-item:hover > .navbar .navbar-nav .nav-item a:before {
+  visibility: visible;
+  width: 100%;
+}
+
+/* 
+*========================
+*          Main         *
+*========================
+*/
+
+#main {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+#main * {
+  transition: all ease-in-out 0.3s;
+}
+
+/* 
+*========================
+*         Section       *
+*========================
+*/
+
+section {
+  height: 100%;
+}
+
+section .container {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+}
+
+.section-title h2 {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 10px 0 30px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.section-title h2::before,
+.section-title h2::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  display: inline-block;
+  background: darkorange;
+  margin: 7px 20px;
+}
+
+.section-title p {
+  margin: 0;
+  margin: -15px 0 15px 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+/* 
+*========================
+*         Footer        *
+*========================
+*/
+
+#footer {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 25px 0;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  transition: all ease-in-out 0.3s;
+}
+
+/* 
+*====================================
+*         Screen Adjustments        *
+*====================================
+*/
+
+@media (max-width: 992px) {
+  .navbar h1 {
+    font-size: 36px;
+    margin-right: auto;
+    margin-left: 5px;
+  }
+  .navbar .navbar-nav .nav-item a {
+    padding: 0;
+    margin: 20px 40px 20px 0;
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar h1 {
+    font-size: 22px;
+  }
+  #main {
+    margin-top: 80px;
+  }
+  .section-title h2:before,
+  .section-title h2:after {
+    width: 40px;
+  }
+  .section-title p {
+    font-size: 28px;
+  }
+  #footer {
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 370px) {
+  .section-title h2 {
+    font-size: 19px;
+  }
+  .section-title h2:before,
+  .section-title h2:after {
+    width: 30px;
+  }
+  .section-title p {
+    font-size: 20px;
+  }
+}
+
+/*************************************************************/
+/**
+/**                          ABOUT
+/**
+/*************************************************************/
+
+.profile .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: darkorange;
+}
+
+.profile .content ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.profile .content ul li {
+  padding-bottom: 10px;
+}
+
+.profile .content ul i {
+  font-size: 20px;
+  color: darkorange;
+}
+
+.profile .content p:last-child {
+  margin-bottom: 0;
+}
+
+.progress {
+  height: 50px;
+  display: block;
+  background: none;
+}
+
+/* * Skill Bar * */
+.progress .skill {
+  padding: 10px 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.progress-bar-wrap {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: darkorange;
+}
+
+.progress-bar.html {
+  width: 80%;
+}
+
+.progress-bar.css {
+  width: 75%;
+}
+
+.progress-bar.js {
+  width: 40%;
+}
+
+.progress-bar.php {
+  width: 30%;
+}
+
+.progress-bar.sql {
+  width: 40%;
+}
+
+.progress-bar.ps {
+  width: 65%;
+}
+
+/* * Screen Adjustments * */
+@media (max-width: 992px) {
+  .profile .content ul {
+    margin: 0px;
+  }
+}
+
+/*************************************************************/
+/**
+/**                         RESUME
+/**
+/*************************************************************/
+
+.resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid rgba(255, 255, 255, 0.25);
+  position: relative;
+}
+
+.resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: darkorange;
+  margin-bottom: 10px;
+}
+
+.resume-item h5 {
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume-item ul {
+  padding-left: 20px;
+}
+
+.resume-item .skills li {
+  padding-bottom: 10px;
+}
+
+.resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: darkorange;
+  border: 2px solid darkorange;
+}
+
+/*************************************************************/
+/**
+/**                       PORTFOLIO
+/**
+/*************************************************************/
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.portfolio-wrap::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 30px;
+  bottom: 30px;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+  border: 3px solid darkorange;
+}
+
+.portfolio-wrap .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-wrap .portfolio-info h4 {
+  font-size: 20px;
+  color: darkorange;
+  font-weight: 600;
+}
+
+.portfolio-wrap .portfolio-info p {
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio-wrap .portfolio-links {
+  text-align: center;
+  z-index: 4;
+}
+
+.portfolio-wrap .portfolio-links a {
+  color: #fff;
+  margin: 4px 6px;
+  font-size: 28px;
+  display: inline-block;
+  transition: 0s;
+}
+
+.portfolio-wrap .portfolio-links a:hover {
+  color: darkorange;
+}
+
+.portfolio-wrap:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+
+.portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
+}
+
+.modal-container .modal-dialog {
+  margin-top: 110px;
+}
+
+/*************************************************************/
+/**
+/**                        CONTACT
+/**
+/*************************************************************/
+
+.contact-me .info-box {
+  color: #444444;
+  padding: 20px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.contact-me .info-box i.bx {
+  font-size: 24px;
+  color: darkorange;
+  border-radius: 50%;
+  padding: 14px;
+  float: left;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.contact-me .info-box h3 {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+  margin: 10px 0 8px 68px;
+}
+
+.contact-me .info-box:hover h3 {
+  color: darkorange;
+}
+
+.contact-me .info-box p {
+  padding: 0;
+  color: #fff;
+  line-height: 24px;
+  font-size: 14px;
+  margin: 0 0 0 68px;
+}
+
+.contact-me .info-box .social-links {
+  margin: 5px 0 0 68px;
+  display: flex;
+}
+
+.contact-me .info-box .social-links a {
+  font-size: 19px;
+  display: inline-block;
+  color: #fff;
+  line-height: 1;
+  margin-right: 15px;
+}
+
+.contact-me .info-box .social-links a:hover {
+  color: darkorange;
+  text-decoration: none;
+  transition: all 0s !important;
+}
+
+/* * Message Form * */
+.contact-me .email-form {
+  padding: 20px 30px 30px 30px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.contact-me .email-form h3 {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+  margin: 0;
+  padding: 15px;
+}
+.contact-me .email-form:hover h3 {
+  color: darkorange;
+}
+
+.contact-me .email-form i.bx {
+  font-size: 20px;
+  color: darkorange;
+  border-radius: 50%;
+  padding: 14px;
+  margin: 5px;
+  float: left;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.contact-me .email-form input,
+.contact-me .email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 0;
+  color: #fff;
+}
+
+.contact-me .email-form input:focus,
+.contact-me .email-form textarea:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.contact-me .email-form input {
+  padding: 20px 15px;
+}
+
+.contact-me .email-form textarea {
+  padding: 12px 15px 30px;
+}
+
+.contact-me .email-form button[type="submit"] {
+  background: darkorange;
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+.contact-me .email-form button[type="submit"]:hover {
+  background: rgb(153, 84, 0);
+}
+
+.contact-me .email-form button[type="submit"]:focus {
+  background: rgb(153, 84, 0);
+  outline-color: red;
+}

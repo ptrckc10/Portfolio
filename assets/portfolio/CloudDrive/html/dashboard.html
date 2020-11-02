@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Patrick P. Concepcion - BSIT3A" />
+    <title>Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style-dashboard.css" />
+    <!-- Icons -->
+    <link rel="icon" href="../images/browser-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Header: NavBar -->
+    <header>
+      <nav id="navbar">
+        <a class="brand" href="./dashboard.html">
+          <span class="brand-color">Cloud</span>Drive
+        </a>
+        <input class="search-bar" type="text" placeholder="Search" />
+        <a class="sign-out" href="../index.html"> Sign out </a>
+      </nav>
+    </header>
+
+    <div class="row ml-1">
+      <!-- SideBar -->
+      <div id="sidebar" class="col-lg-2">
+        <ul>
+          <li class="categories">
+            <a class="fas fa-star" href="#">
+              <span class="font-fam"> Favorites </span>
+            </a>
+            <ul class="drop-down">
+              <li style="padding-left: 1rem">
+                <a class="fas fa-download" href="#">
+                  <span class="font-fam"> Downloads </span>
+                </a>
+              </li>
+              <li style="padding-left: 1rem">
+                <a class="fas fa-location-arrow" href="#">
+                  <span class="font-fam"> Recent Places </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="categories">
+            <a class="fas fa-folder" href="#">
+              <span class="font-fam"> Libraries </span>
+            </a>
+            <ul class="drop-down">
+              <li style="padding-left: 1rem">
+                <a class="fas fa-folder-open" href="#">
+                  <span class="font-fam"> Documents </span>
+                </a>
+              </li>
+              <li style="padding-left: 1rem">
+                <a class="fas fa-music" href="#">
+                  <span class="font-fam"> Music </span>
+                </a>
+              </li>
+              <li style="padding-left: 1rem">
+                <a class="fas fa-images" href="#">
+                  <span class="font-fam"> Pictures </span>
+                </a>
+              </li>
+              <li style="padding-left: 1rem">
+                <a class="fas fa-film" href="#">
+                  <span class="font-fam"> Videos </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="categories">
+            <a class="fas fa-project-diagram" href="#">
+              <span class="font-fam"> Network </span>
+            </a>
+            <ul class="drop-down">
+              <li style="padding-left: 1rem">
+                <a class="fas fa-user" href="#">
+                  <span class="font-fam"> Bill </span>
+                </a>
+              </li>
+              <li style="padding-left: 1rem">
+                <a class="fas fa-user" href="#">
+                  <span class="font-fam"> George </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- Dashboard -->
+      <div id="dashboard" class="col-lg-10">
+        <div class="container">
+          <div class="drive-storage">
+            <div style="font-weight: 550">Drive Storage</div>
+            <div class="bar-container">
+              <div class="storage"></div>
+            </div>
+            <div
+              style="
+                font-size: 1.2rem;
+                margin-top: 0.5rem;
+                color: rgb(116, 116, 116);
+              "
+            >
+              25.0 GB of 64.0 GB Used
+              <a style="float: right" href="#">Clean Up</a>
+            </div>
+          </div>
+          <hr />
+          <div class="items">
+            <a class="fas fa-images" href="#" style="color: rgb(233, 59, 59)">
+              <div class="text-item">Photos</div>
+              <div class="text-item-count">3056</div>
+            </a>
+            <a
+              class="fas fa-play-circle"
+              href="#"
+              style="color: rgb(223, 27, 223)"
+            >
+              <div class="text-item">Videos</div>
+              <div class="text-item-count">69</div>
+            </a>
+            <a class="fas fa-music" href="#" style="color: rgb(223, 154, 27)">
+              <div class="text-item">Audio</div>
+              <div class="text-item-count">120</div>
+            </a>
+            <a class="fas fa-file" href="#" style="color: rgb(199, 199, 44)">
+              <div class="text-item">Documents</div>
+              <div class="text-item-count">1162</div>
+            </a>
+            <a
+              class="fas fa-file-archive"
+              href="#"
+              style="color: rgb(10, 47, 255)"
+            >
+              <div class="text-item">Archives</div>
+              <div class="text-item-count">90</div>
+            </a>
+          </div>
+          <div class="tiles">
+            <div class="tiles-container">
+              <a href="#">
+                <span class="fas fa-angle-right"></span>
+                <div class="text-tiles">Drive Storage</div>
+                <div class="text-tiles-count">39.0 GB of 64.0 GB Available</div>
+              </a>
+            </div>
+            <div class="tiles-container">
+              <a href="#">
+                <span class="fas fa-angle-right"></span>
+                <div class="text-tiles">Recently deleted</div>
+                <div class="text-tiles-count">4.5 GB</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,268 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: rgb(248, 248, 248);
+  overflow-x: hidden;
+}
+
+/** NavBar **/
+#navbar {
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #ffffff;
+  padding-top: 0.25rem;
+  box-shadow: 0px 0px 20px 0px wheat;
+  background-color: #272c30;
+  position: fixed;
+  z-index: 999;
+}
+#navbar a {
+  padding: 0.875rem 1.6rem;
+  text-decoration: none;
+  padding-top: 0.75rem;
+  padding-bottom: 0.9rem;
+  font-size: 1rem;
+}
+#navbar .brand {
+  color: #fff;
+  font-weight: bold;
+}
+#navbar .brand:hover .brand-color {
+  color: #4c6ef5;
+}
+#navbar .sign-out {
+  color: #cccdcf;
+  float: right;
+  font-size: 0.875rem;
+}
+#navbar .sign-out:hover,
+#navbar .sign-out:focus {
+  color: #fff;
+}
+#navbar .search-bar {
+  margin-left: 5.5rem;
+  margin-right: 0rem;
+  padding: 0.75rem 1rem 0.4rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+  color: #fff;
+  background-color: #3d4245;
+  width: 65%;
+  outline: none;
+}
+#navbar .search-bar:focus {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
+  background-color: #fff;
+  color: #272c30;
+}
+
+/** SideBar **/
+#sidebar {
+  position: fixed;
+  background-color: #f8f9fa;
+  box-shadow: inset -1px 0px 2px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-top: 2.9rem;
+  height: 100vh;
+}
+#sidebar ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+#sidebar ul .categories {
+  margin-top: 1.3rem;
+}
+#sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 0.875rem;
+  display: block;
+  font-weight: bold;
+  color: #999;
+  line-height: 1.6rem;
+}
+#sidebar a:hover {
+  color: #3f3f3f;
+}
+#sidebar a:focus,
+#sidebar a:focus .font-fam {
+  color: #007bff;
+}
+#sidebar a .font-fam {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #3f3f3f;
+}
+
+/** Dashboard **/
+#dashboard {
+  height: 100vh;
+  margin-top: 2.9rem;
+  margin-left: 13rem;
+}
+#dashboard .container {
+  margin: 0.1rem;
+  padding-left: 1rem;
+  background-color: rgb(248, 248, 248);
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 1.8rem;
+  color: #212529;
+}
+#dashboard .container .drive-storage {
+  margin: 1.3rem 0rem 0rem 0.4rem;
+  width: 45%;
+}
+#dashboard .container .bar-container {
+  margin-top: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 4px 0px black;
+  border-radius: 0.5rem;
+}
+#dashboard .container .storage {
+  padding: 10px;
+  width: 39.0625%;
+  background-color: #00aeff;
+  border-radius: 0.5rem;
+}
+#dashboard .container .drive-storage a {
+  text-decoration: none;
+  color: #3f3f3f;
+}
+#dashboard .container .drive-storage a:hover,
+#dashboard .container .drive-storage a:focus {
+  color: #007bff;
+}
+#dashboard .container .items {
+  margin: 0rem 0rem 0rem 4.1rem;
+  width: 100%;
+}
+#dashboard .container .items a {
+  text-align: center;
+  font-size: 3.5rem;
+  text-decoration: none;
+  margin-right: 6%;
+  margin-top: 2.5rem;
+}
+#dashboard .container .items a .text-item {
+  font-size: 1.5rem;
+  color: #212529;
+  font-family: "Calibri", Helvetica, sans-serif;
+  width: 8rem;
+}
+#dashboard .container .items a .text-item-count {
+  font-size: 1.4rem;
+  color: rgb(116, 116, 116);
+  font-family: "Calibri", Helvetica, sans-serif;
+}
+#dashboard .container .items a:hover {
+  background-color: rgb(224, 224, 224);
+  border-radius: 1rem;
+  box-shadow: 0px 0px 3px 0px black;
+  color: inherit;
+}
+#dashboard .container .items a:hover .text-item {
+  color: inherit;
+}
+#dashboard .container .tiles {
+  margin: 5rem 0rem 1rem 1rem;
+}
+#dashboard .container .tiles .tiles-container {
+  margin-top: 2rem;
+  width: 30%;
+  padding: 0.8rem;
+  box-shadow: 0px 0px 3.5px 0px black;
+  border-radius: 1rem;
+  background-color: #f8f9fa;
+}
+#dashboard .container .tiles .tiles-container:hover {
+  background-color: rgb(224, 224, 224);
+}
+#dashboard .container .tiles .divider {
+  margin-top: 2rem;
+}
+#dashboard .container .tiles .tiles-container a {
+  text-decoration: none;
+}
+#dashboard .container .tiles .tiles-container a .fas {
+  float: right;
+  font-size: 1.3rem;
+  margin-top: 0.9rem;
+  color: gray;
+}
+#dashboard .container .tiles .tiles-container a .text-tiles {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #212529;
+}
+#dashboard .container .tiles .tiles-container a .text-tiles-count {
+  font-size: 1.1rem;
+  color: rgb(116, 116, 116);
+}
+
+/* *Smartphone Screen* */
+@media (max-width: 600px) {
+  #navbar {
+    box-shadow: 0px 0px 10px 0px wheat !important;
+    padding-bottom: 2.5rem !important;
+  }
+  #navbar a {
+    float: left !important;
+  }
+  #navbar .sign-out {
+    float: right !important;
+  }
+  #navbar .search-bar {
+    position: absolute;
+    top: 47px;
+    display: block;
+    width: 100%;
+    background-color: #3d4245;
+    box-shadow: 0px 0px 1px 0px black;
+    margin: 0;
+  }
+  #sidebar {
+    left: 0;
+    width: 100% !important;
+    margin-top: 5.5rem !important;
+    height: 14% !important;
+    box-shadow: inset -1px 0px 4px rgba(0, 0, 0, 1) !important;
+  }
+  #sidebar a {
+    font-size: 0.65rem !important;
+    padding-top: 0rem !important;
+  }
+  #sidebar li {
+    padding-top: 0rem !important;
+  }
+  #dashboard {
+    margin: 50% 0rem 0rem 0rem !important;
+    width: 100% !important;
+  }
+  #dashboard .container .drive-storage {
+    width: 90% !important;
+  }
+  #dashboard .container .items {
+    margin: 0rem 0rem 0rem 0rem !important;
+    text-align: center;
+    width: 90%;
+  }
+  #dashboard .container .items a {
+    margin: 1rem 0rem 0rem 0rem !important;
+    font-size: 3rem;
+  }
+  #dashboard .container .items a .text-item {
+    font-size: 1.4rem;
+  }
+  #dashboard .container .items a .text-item-count {
+    font-size: 1.25rem;
+  }
+  #dashboard .container .tiles {
+    margin: 2rem 0rem 2rem 1rem;
+  }
+  #dashboard .container .tiles .tiles-container {
+    width: 84.5%;
+  }
+}
